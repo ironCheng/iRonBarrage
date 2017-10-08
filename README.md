@@ -7,7 +7,8 @@ a Barrage Kit for iOS / iOS 弹幕控件
 
 参考viewController<br>
 <pre><code>
-1、#import "iRonBarrage.h"，并遵守协议 iRonBarrageDataSource <br>
+1、#import "iRonBarrage.h"，并遵守协议 iRonBarrageDataSource 
+
 2、 _manager = [iRonBarrage shareInstance];
     _manager.showingView = self.view;
     _manager.scrollSpeed = 90;
@@ -16,6 +17,7 @@ a Barrage Kit for iOS / iOS 弹幕控件
     
     _manager.dataSource = self;
     [_manager startScroll];
+    
 3、dataSource里
   - (id)dataSourceForTheBarrage:(iRonBarrage *)barrage
 {
