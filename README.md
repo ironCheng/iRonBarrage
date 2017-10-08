@@ -34,8 +34,6 @@ a Barrage Kit for iOS / iOS 弹幕控件
 }
 </code></pre>
 
-## 原理-Principle
-
 
 
 </p>
