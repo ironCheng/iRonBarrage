@@ -7,7 +7,7 @@ a Barrage Kit for iOS / iOS 弹幕控件
 
 参考viewController<br>
 <pre><code>
-1、#import "iRonBarrage.h"，并遵守协议 <iRonBarrageDataSource> <br>
+1、#import "iRonBarrage.h"，并遵守协议 /<iRonBarrageDataSource/> <br>
 2、 _manager = [iRonBarrage shareInstance];
     _manager.showingView = self.view;
     _manager.scrollSpeed = 90;
@@ -19,7 +19,6 @@ a Barrage Kit for iOS / iOS 弹幕控件
 3、dataSource里
   - (id)dataSourceForTheBarrage:(iRonBarrage *)barrage
 {
-    
     int a = arc4random() % 10000;
     NSString *str = [NSString stringWithFormat:@"%d",a];
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:str];
